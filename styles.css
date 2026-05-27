@@ -1,0 +1,66 @@
+.stApp {
+    background: #f7f7f8;
+    font-family: system-ui;
+}
+
+.block-container {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 40px !important;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 25px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #0d47a1, #1976d2);
+    color: white;
+}
+
+.chat-wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+
+[data-testid="stChatMessage"] {
+    border-radius: 16px !important;
+    padding: 14px !important;
+    margin-bottom: 14px !important;
+}
+
+[data-testid="stChatMessage"]:has(div[data-testid="assistant-avatar"]) {
+    background: white;
+    border: 1px solid #e5e5e5;
+}
+
+[data-testid="stChatMessage"]:has(div[data-testid="user-avatar"]) {
+    background: #1976d2;
+    color: white;
+}
+
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+}
+/* Hide default Streamlit chat input */
+div[data-testid="stChatInput"] {
+    display: none !important;
+}
+
+section[data-testid="stFileUploader"] {
+    position: fixed;
+    bottom: 28px;
+    left: 19%;
+    width: 50px;
+    opacity: 0;
+}
+iframe[title="streamlit_mic_recorder"] {
+    position: fixed !important;
+    bottom: 28px !important;
+    right: 20% !important;
+}

@@ -1,0 +1,5 @@
+tesseract-main/
+venv/
+__pycache__/
+.env
+*.pyc
